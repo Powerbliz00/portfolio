@@ -3332,6 +3332,10 @@ input, select, textarea {
 
 blockquote {
     border-left: solid 6px #216530;
+}
+
+.mono {
+    font-family: 'Tektur', cursive;
 
 }
 
