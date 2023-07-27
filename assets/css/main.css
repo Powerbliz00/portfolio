@@ -3318,6 +3318,12 @@ input, select, textarea {
     text-align: center;
 }
 
+.blacked {
+    background-color: #000000;
+    margin-top: 30px;
+    padding: 60px;
+}
+
 /* CODICE PER LA SKILL BAR */
 
 
