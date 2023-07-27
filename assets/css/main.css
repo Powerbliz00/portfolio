@@ -3321,7 +3321,18 @@ input, select, textarea {
 .blacked {
     background-color: #000000;
     margin-top: 30px;
-    padding: 60px;
+    padding: 60px 150px ;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+#centered {
+    text-align: center;
+}
+
+blockquote {
+    border-left: solid 6px #216530;
+
 }
 
 /* CODICE PER LA SKILL BAR */
