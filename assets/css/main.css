@@ -1,5 +1,7 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 /*
 	Strata by HTML5 UP
@@ -2551,6 +2553,52 @@ input, select, textarea {
 			cursor: default;
 		}
 
+		.btn {
+			position: relative;
+			font-size: 17px;
+			text-transform: uppercase;
+			text-decoration: none;
+			padding: 1em 2.5em;
+			display: inline-block;
+			border-radius: 6em;
+			transition: all .2s;
+			border: none;
+			font-family: inherit;
+			font-weight: 500;
+			color: black;
+			background-color: white;
+		   } 
+		.btn:hover {
+			transform: translateY(-3px);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+		}
+		   
+		.btn:active {
+			transform: translateY(-1px);
+			box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		   }
+		   
+		   .btn::after {
+			content: "";
+			display: inline-block;
+			height: 100%;
+			width: 100%;
+			border-radius: 100px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			transition: all .4s;
+		   }
+		   
+		   .btn::after {
+			background-color: #fff;
+		   }
+		   
+		   .btn:hover::after {
+			transform: scaleX(1.4) scaleY(1.6);
+			opacity: 0;
+		   }
 /* Work Item */
 
 	.work-item {
@@ -3335,8 +3383,18 @@ blockquote {
 }
 
 .mono {
-    font-family: 'Tektur', cursive;
+    font-family: 'Georgia','Jost',serif;
 
+}
+
+/* <uniquifier>: Use a unique and descriptive class name
+<weight>: Use a value from 100 to 900 */
+
+.jost-font {
+	font-family: "Jost", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
 }
 
 /* CODICE PER LA SKILL BAR */
